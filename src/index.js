@@ -1,7 +1,9 @@
+//version 1.4 nuevas operaciones matematicas y botones extra
 //version 1.4.1 remasterizacion del codigo
 //version 1.5 mejora al leer expresiones matematicas combinadas(incorporación del 'eval()') y escribír con teclado.  
-
-// ~Version 1.6 merjora de Raiz cuadrada y funcionamiento del SYNTAX ERROR
+// Version 1.6 merjora de Raiz cuadrada y funcionamiento del SYNTAX ERROR
+// 
+// Version 2.0 uso de git y lista para el 'first commit' :D
 
 'use strict'
 
