@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Básica</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body class="light">
+    <div id='version'>version 1.5</div>
+    <div align="center">
+    <h1 style="font-size: 1.35cm" class="letra">Calculadora Basica</h1>
+    <hr height='2cm' width="500px">
+
+    <!-- HISTORAL -->
+    <select id="select" class="light">
+        <option value="0" disabled="true">Bienvenido</option>
+    </select><br>
+
+    <!-- ENTRADA -->
+    <input id="cifra" style="text-align: center; border: 2px inset lightblue">
+
+    <hr class="alin2" width="400px">
+    </div>
+
+    <!-- BOTONES -->
+
+    <div id="pad2" align="center">
+    </div>
+    <div id="pad" align="center"> 
+        <button id="uno" onclick="Write(1)">1</button>
+        <button id="dos" onclick="Write(2)">2</button>
+        <button id="tres" onclick="Write(3)">3</button>
+        <button id="suma" onclick="Write('+')">+</button>
+        <button id="borrar" onclick="Eliminate()">←</button>
+        <button id="sqrt" class="off light" onclick="Write('√')">√</button>
+    <br>
+        <button id="cuatro" onclick="Write(4)">4</button>
+        <button id="cinco" onclick="Write(5)">5</button>
+        <button id="seis" onclick="Write(6)">6</button>
+        <button id="resta" onclick="Write('-')">-</button>
+        <button id="resset" onclick="Eliminate('all')">CE</button>
+        <button id="poten" class="off light" onclick="Write('^')">x°</button>
+    <br>
+        <button id="siete" onclick="Write(7)">7</button>
+        <button id="ocho" onclick="Write(8)">8</button>
+        <button id="nueve" onclick="Write(9)">9</button>
+        <button id="multiplicacion" onclick="Write('*')">*</button>
+        <button id="theme" onclick="ChangeTheme()">☽</button>
+        <button class="off light" onclick="Write('(')">(</button>
+    <br>
+        <button id="punto" onclick="Write('.')">.</button>
+        <button id="cero" onclick="Write(0)">0</button>
+        <button id="igual" onclick="Calculate()">=</button>
+        <button id="division" onclick="Write('/')">÷</button>
+        <button id="show_btn" onclick="ShowBtns()" style="color: #0f0;">✙</button>
+        <button class="off light" onclick="Write(')')">)</button>
+    <br>
+    </div>
+        
+</center>   
+    <script src="./src/index.js"></script>
+</body>
+</html>

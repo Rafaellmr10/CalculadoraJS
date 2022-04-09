@@ -1,0 +1,110 @@
+body{
+    height:15cm;
+    width:98%
+}
+body.light{
+    background:#EEEEFF;
+    border:5px outset gray;
+}
+select.light{
+    background: white;
+    border: 2px inset lightblue;
+    color: black;
+}
+button.light{
+    background:white;
+    border:2px outset lightblue;
+}
+#theme.light{
+    color: blue;
+    text-shadow: 3px 0px 4px blue;
+}
+body.dark{
+    color:lightblue;
+    background:#000011;
+    border:5px outset gray;
+}
+select.dark{
+    color: white;
+    background: black;
+    border: 2px inset blue;
+}
+button.dark{
+    color:white;
+    background:black;
+    border:2px outset blue;
+}
+#theme.dark{
+    color: yellow;
+    text-shadow: 3px 0px 4px yellow;
+}
+#version{
+    position:fixed;
+    left:0.6cm;
+    color:rgba(0, 0, 0, 0.5);
+}
+select{
+    padding: 0px;
+    margin-bottom: 1cm;
+    width: 5cm;
+    height: 1cm;
+    font-size: large; 
+    text-align: center;
+}
+button{
+    position: relative;
+    width: 2.5cm;
+    height: 1.7cm;
+    cursor:pointer;
+    font-size: xx-large;
+}
+button.light:hover{
+    background:lightgray;
+}
+button.light:active{
+    background:gray;
+}
+#register{
+    font-size:small;
+}
+#cifra, #resultado{
+    font-size:xx-large;
+}
+#pad{
+    position: relative;
+    left:1.2cm;
+}
+.on{
+    animation-duration:0.7s;
+    animation-name:Visible;
+    z-index: 0;
+    opacity: 1;
+}
+.off{
+    animation-duration:0.7s;
+    animation-name:Hidden;
+    z-index: -1;
+    opacity: 0;
+}
+@keyframes Visible{
+    from{
+        z-index: -1;
+        opacity: 0;
+        right: 3cm;
+    }
+    to{
+        z-index: -1;
+        opacity: 1;
+        right: 0cm;
+    }
+}
+@keyframes Hidden{
+    from{
+        opacity: 1;
+        right: 0cm
+    }
+    to{
+        opacity: 0;
+        right:3cm;
+    }
+}
